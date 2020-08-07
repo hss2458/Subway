@@ -1,0 +1,79 @@
+.header {
+    height: 165px;
+    display: flex;
+    border-top: 5px solid #009223;
+
+    .content {
+        position: relative;
+        min-width: 1170px;
+        margin: 0 auto;
+        
+        .top-header {
+            margin: 55px 0 0;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                left: 0; // flex 쓰기 위해서 가로를 100%로 늘려줌
+                right: 0;
+                
+
+                a {
+                    display: flex;
+                    background: url("./../images/logo_w.png") no-repeat;
+                    width: 202px;
+                    height: 40px;
+    
+                }
+            }
+    
+            .utilty {
+                position: absolute;
+                right: 20px;
+
+                ul {
+                    display: flex;
+                    
+                    li {
+                        padding: 10px;
+                        &:nth-child(3) {
+                            a {
+                                background: url("./../images/icon_utill_global.png");
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+
+                        a {
+                            display: flex;
+                            color: #666666;
+                            font-size: 13px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            height: 30px;
+
+                            &::after {
+                                background-color: #ddd;
+                                content: '';
+                                display: block;
+                                border-radius: 50px;
+                                position: absolute;
+                                left: 58px;
+                                top: 50%;
+                                margin-top: -2px;
+                                height: 3px;
+                                width: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
