@@ -540,20 +540,34 @@ html, body {
 }
 
 .header {
-  height: 165px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: 165px;
   border-top: 5px solid #009223;
 }
 
-.header .content {
+.header::after {
+  background-color: #e5e5e5;
+  content: '';
+  display: block;
+  border-radius: 50px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 1.5px;
+  width: 100%;
+}
+
+.header .top-header {
   position: relative;
   min-width: 1170px;
   margin: 0 auto;
 }
 
-.header .content .top-header {
+.header .top-header .content {
   margin: 55px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,7 +577,7 @@ html, body {
           align-items: center;
 }
 
-.header .content .top-header h1 {
+.header .top-header .content h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,7 +589,7 @@ html, body {
   right: 0;
 }
 
-.header .content .top-header h1 a {
+.header .top-header .content h1 a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -584,28 +598,28 @@ html, body {
   height: 40px;
 }
 
-.header .content .top-header .utilty {
+.header .top-header .content .utilty {
   position: absolute;
   right: 20px;
 }
 
-.header .content .top-header .utilty ul {
+.header .top-header .content .utilty ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header .content .top-header .utilty ul li {
+.header .top-header .content .utilty ul li {
   padding: 10px;
 }
 
-.header .content .top-header .utilty ul li:nth-child(3) a {
+.header .top-header .content .utilty ul li:nth-child(3) a {
   background: url("./../images/icon_utill_global.png");
   width: 30px;
   height: 30px;
 }
 
-.header .content .top-header .utilty ul li a {
+.header .top-header .content .utilty ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,7 +630,7 @@ html, body {
   height: 30px;
 }
 
-.header .content .top-header .utilty ul li a::after {
+.header .top-header .content .utilty ul li a::after {
   background-color: #ddd;
   content: '';
   display: block;
@@ -627,5 +641,82 @@ html, body {
   margin-top: -2px;
   height: 3px;
   width: 3px;
+}
+
+.header .bottom-header .content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 97px;
+  background-color: #ffffff;
+}
+
+.header .bottom-header .content .gnb {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.header .bottom-header .content .gnb .main-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .bottom-header .content .gnb .main-ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .bottom-header .content .gnb .main-ul li:hover a {
+  color: #009223;
+}
+
+.header .bottom-header .content .gnb .main-ul li a {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 23px 52px;
+  letter-spacing: -0.04em;
+}
+
+.header .bottom-header .content .gnb .main-ul .dropdown {
+  display: block;
+  position: absolute;
+  margin-top: 35px;
+}
+
+.header .bottom-header .content .gnb .main-ul .dropdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .bottom-header .content .gnb .main-ul .dropdown ul li a {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #666666;
+  letter-spacing: -0.05em;
+}
+
+.header .bottom-header .content .gnb .main-ul .dropdown ul li a:hover {
+  color: #1e9f3d;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,14 +1,28 @@
 .header {
-    height: 165px;
+    position: relative;
     display: flex;
+    width: 100%;
+    height: 165px;
     border-top: 5px solid #009223;
 
-    .content {
+    &::after {
+        background-color: #e5e5e5;
+        content: '';
+        display: block;
+        border-radius: 50px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        height: 1.5px;
+        width: 100%;
+    }
+
+    .top-header {
         position: relative;
         min-width: 1170px;
         margin: 0 auto;
-        
-        .top-header {
+
+        .content {
             margin: 55px 0 0;
             display: flex;
             align-items: center;
@@ -19,26 +33,27 @@
                 position: absolute;
                 left: 0; // flex 쓰기 위해서 가로를 100%로 늘려줌
                 right: 0;
-                
+
 
                 a {
                     display: flex;
                     background: url("./../images/logo_w.png") no-repeat;
                     width: 202px;
                     height: 40px;
-    
+
                 }
             }
-    
+
             .utilty {
                 position: absolute;
                 right: 20px;
 
                 ul {
                     display: flex;
-                    
+
                     li {
                         padding: 10px;
+
                         &:nth-child(3) {
                             a {
                                 background: url("./../images/icon_utill_global.png");
@@ -75,5 +90,73 @@
 
     }
 
+    .bottom-header {
 
+        .content {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 97px;
+            background-color: #ffffff;
+    
+                .gnb {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    background-color: #ffffff;
+
+                    .main-ul {
+                        display: flex;
+                        justify-content: space-around;
+
+                        li {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            &:hover {
+                                a {
+                                    color: #009223;
+                                }
+                            }
+
+                            a {
+                                font-size: 17px;
+                                font-weight: 600;
+                                padding: 23px 52px;
+                                letter-spacing: -0.04em;
+                            }
+                        }
+
+                        .dropdown {
+                            display: block;
+                            position: absolute;
+                            margin-top: 35px;
+                            
+
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+
+                                li {
+                                    a {
+                                        padding: 10px;
+                                        font-size: 15px;
+                                        font-weight: 400;
+                                        color: #666666;
+                                        letter-spacing: -0.05em;
+
+                                        &:hover {
+                                            color: #1e9f3d;
+                                            text-decoration: underline;                                
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+    }
 }
