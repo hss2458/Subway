@@ -122,10 +122,18 @@
                     .prev {
                         position: absolute;
                         left: -10%;
+                        width: 50px;
+                        height: 50px;
+                        background: url("./../images/icon_event_slider_arr.png") 0 0 no-repeat;
+                        // 스프라이트 이미지는 x, y 좌표 0 0을 기점으으로 끌어다 놓는다고 생각하면 됨
+                    
                     }
                     .next {
                         position: absolute;
                         right: -10%;
+                        width: 50px;
+                        height: 50px;
+                        background: url("./../images/icon_event_slider_arr.png") -50px 0 no-repeat;
                     }
 
                 }

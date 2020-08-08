@@ -868,11 +868,17 @@ html, body {
 .main .container .sw-menu .container .arrow-btn .prev {
   position: absolute;
   left: -10%;
+  width: 50px;
+  height: 50px;
+  background: url("./../images/icon_event_slider_arr.png") 0 0 no-repeat;
 }
 
 .main .container .sw-menu .container .arrow-btn .next {
   position: absolute;
   right: -10%;
+  width: 50px;
+  height: 50px;
+  background: url("./../images/icon_event_slider_arr.png") -50px 0 no-repeat;
 }
 
 .main .container .sw-menu .container .title {
