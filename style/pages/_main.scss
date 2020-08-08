@@ -1,0 +1,200 @@
+.main {
+
+    .container {
+        max-width: 1920px;
+        padding: 0 15px;
+
+        .banner-box {
+                .visual {
+                    width: 100%;
+                    height: 440px;
+                    display: none;
+        
+                    &:nth-child(1) { 
+                        background: url("./../images/00_써브웨이_Main_02_20200629104654697.jpg") no-repeat;
+                    }
+                    &:nth-child(2) { 
+                        background: url("./../images/main_PC_1920x440_20200626052759013.jpg") no-repeat; 
+                    }
+                    &:nth-child(3) { 
+                        background: url("./../images/main_PC_1920x440_20200706054334328.jpg") no-repeat; 
+                    }
+            
+                }
+        
+                .active {
+                    display: block;
+                }
+        
+                .btn {
+                    display: flex;
+                    position: absolute;
+                    top: 560px;
+                    right: 138px;
+        
+                    .btn-bar {
+                        margin: 0 10px;
+                        background-color: olive;
+                        width: 50px;
+                        height: 6px;
+                    }
+                    .active {
+                        background: rgb(156, 156, 156);
+                    }
+                }
+
+        }
+
+        .quick-link {
+            margin: -35px 335px 0 0;
+            display: flex;
+            justify-content: flex-end;
+
+            .store,
+            .franchise {
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 300px;
+                    height: 80px;
+
+                    span {
+                        padding-left: 30px;
+                    }
+                }
+            }
+
+            .store {
+                position: relative;
+                &::before {
+                    width: 34px;
+                    height: 30px;
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 82px;
+                    background: url("./../images/icon_map.png")no-repeat;
+                }
+                a {
+                    color: #292929;
+                    font-size: 22px;
+                    font-weight: bold;
+                    background-color: #ffce32;
+                    border-radius: 30px 0 0 0;
+                }
+            }
+
+            .franchise {
+                position: relative;
+                &::before {
+                    width: 34px;
+                    height: 30px;
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 47px;
+                    background: url("./../images/icon_franchise.png")no-repeat;
+                }
+
+                a{
+                    color: #fff;
+                    font-size: 22px;
+                    font-weight: bold;
+                    background-color: #009223;
+                    border-radius: 0 0 30px 0;
+                }
+            }
+        }
+
+        .sw-menu {
+            .container {
+                max-width: 1280px;
+                margin: 0 auto;
+                padding: 80px 0;
+
+                .arrow-btn {
+                    position: relative;
+                    font-size: 50px;
+
+                    .prev {
+                        position: absolute;
+                        left: -10%;
+                    }
+                    .next {
+                        position: absolute;
+                        right: -10%;
+                    }
+
+                }
+
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+
+                    h2 {
+                        color: #292929;
+                        font-size: 40px;
+                        font-weight: bold;
+                        min-height: 60px;
+                        padding: 17px 0 0 25px;
+                        height: 50px;
+                        background: url("./../images/bul_tit.png") no-repeat;
+                    }
+
+                    .category {
+                        a {
+                            position: relative;
+                            display: inline-block;
+                            padding: 0 25px;
+                            font-size: 16px;
+                            color: #666666;
+                            font-weight: 600;
+                            letter-spacing: -0.03em;
+                            &:nth-child(2)::after,
+                            &:nth-child(3)::after,
+                            &:nth-child(4)::after {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                top: 3px;
+                                width: 1px;
+                                height: 15px;
+                                background-color: #dddddd;
+                            }
+                        }
+                    }
+                }
+
+                .menu-slide {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 260px;
+                    }
+                    .txt {
+                        h3 {
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #292929;
+                            margin: 3px 0 10px;
+                        }
+                        p {
+                            text-align: center;
+                            font-size: 13px;
+                            color: #999999;
+                            line-height: 21px;
+                            opacity: 1;
+                            margin: 0 auto;
+                            letter-spacing: -0.04em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -99,6 +99,7 @@
             right: 0;
             top: 97px;
             background-color: #ffffff;
+            transition-duration: 0.2s;
     
                 .gnb {
                     max-width: 1000px;
@@ -130,26 +131,31 @@
                         }
 
                         .dropdown {
-                            display: block;
+                            padding-top: 30px; //gnd최상위 메뉴와 드롭메뉴 사이에 간격이 있으면 마우스 이동 시 버벅버벅
                             position: absolute;
-                            margin-top: 35px;
-                            
+                            max-height: 0;
+                            overflow: hidden;             
 
                             ul {
                                 display: flex;
                                 flex-direction: column;
+                                width: 100%;
 
                                 li {
+                                
                                     a {
-                                        padding: 10px;
+                                        text-align: center;
+                                        padding: 10px 21px;
+                                        width: 100%;                                        
                                         font-size: 15px;
                                         font-weight: 400;
                                         color: #666666;
                                         letter-spacing: -0.05em;
+                                        box-sizing: content-box;
 
                                         &:hover {
                                             color: #1e9f3d;
-                                            text-decoration: underline;                                
+                                            text-decoration: underline;                                                                        
                                         }
                                     }
                                 }
