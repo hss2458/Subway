@@ -977,7 +977,7 @@ html, body {
 .main .container .sw-menu .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 80px 0 160px 0;
+  padding: 80px 0;
 }
 
 .main .container .sw-menu .container .arrow-btn {
@@ -1048,13 +1048,50 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 362px;
 }
 
-.main .container .sw-menu .container .menu-slide img {
+.main .container .sw-menu .container .menu-slide .item {
+  padding: 0 15px;
+  position: relative;
+}
+
+.main .container .sw-menu .container .menu-slide .item::after {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: '';
+  width: 98px;
+  height: 98px;
+  background: url("./../images/btn_more.png") no-repeat;
+}
+
+.main .container .sw-menu .container .menu-slide .item:hover::after {
+  opacity: 1;
+}
+
+.main .container .sw-menu .container .menu-slide .item:hover img {
+  width: 350px;
+}
+
+.main .container .sw-menu .container .menu-slide .item:hover .txt h3 {
+  font-size: 22px;
+}
+
+.main .container .sw-menu .container .menu-slide .item:hover .txt p {
+  display: none;
+}
+
+.main .container .sw-menu .container .menu-slide .item img {
+  position: relative;
   width: 260px;
 }
 
-.main .container .sw-menu .container .menu-slide .txt h3 {
+.main .container .sw-menu .container .menu-slide .item .txt h3 {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -1062,7 +1099,7 @@ html, body {
   margin: 3px 0 10px;
 }
 
-.main .container .sw-menu .container .menu-slide .txt p {
+.main .container .sw-menu .container .menu-slide .item .txt p {
   text-align: center;
   font-size: 13px;
   color: #999999;

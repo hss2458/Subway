@@ -113,8 +113,7 @@
             .container {
                 max-width: 1280px;
                 margin: 0 auto;
-                padding: 80px 0 160px 0;
-
+                padding: 80px 0;
                 .arrow-btn {
                     position: relative;
                     top: 192px;
@@ -180,26 +179,62 @@
                 .menu-slide {
                     display: flex;
                     justify-content: center;
+                    height: 362px;
 
-                    img {
-                        width: 260px;
-                    }
-                    .txt {
-                        h3 {
-                            text-align: center;
-                            font-size: 18px;
-                            font-weight: 600;
-                            color: #292929;
-                            margin: 3px 0 10px;
+                    .item {
+                        padding: 0 15px;
+                        position: relative;
+
+                        &::after {
+                            opacity: 0;
+                            display: block;      
+                            position: absolute;
+                            top: 45%;
+                            left: 50%;
+                            transform: translateX(-50%);              
+                            content: '';
+                            width: 98px;
+                            height: 98px;
+                            background: url("./../images/btn_more.png") no-repeat;
                         }
-                        p {
-                            text-align: center;
-                            font-size: 13px;
-                            color: #999999;
-                            line-height: 21px;
-                            opacity: 1;
-                            margin: 0 auto;
-                            letter-spacing: -0.04em;
+                        &:hover {
+                            &::after {
+                                opacity: 1;
+                            }
+                            img {
+                                width: 350px;
+                            }
+                            .txt {
+                                h3 {
+                                    font-size: 22px;
+                                }
+                                p {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        img {
+                            position: relative;
+                            width: 260px;
+                        }
+                        .txt {
+                            h3 {
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: #292929;
+                                margin: 3px 0 10px;
+                            }
+                            p {
+                                text-align: center;
+                                font-size: 13px;
+                                color: #999999;
+                                line-height: 21px;
+                                opacity: 1;
+                                margin: 0 auto;
+                                letter-spacing: -0.04em;
+                            }
                         }
                     }
                 }
