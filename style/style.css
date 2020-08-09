@@ -1115,4 +1115,69 @@ html, body {
   font-size: 14px;
   padding: 33px 0 8px;
 }
+
+.main .section .container .content-bottom .sb-news .banner {
+  position: absolute;
+  right: -300px;
+}
+
+.main .section .container .content-bottom .sb-news .banner .movie {
+  width: 270px;
+  height: 300px;
+  background: url("./../images/200616_하단배너제작건_20200616110752022.jpg") no-repeat;
+  border-radius: 0 30px 0 30px;
+}
+
+.link .quick-menu {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.link .quick-menu .item {
+  padding: 0 45px;
+}
+
+.link .quick-menu .item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link .quick-menu .item a .icon {
+  width: 70px;
+  height: 70px;
+  background: url("./../images/icon_quickmenu.png") 0 0 no-repeat;
+}
+
+.link .quick-menu .item a .txt p {
+  margin-left: 20px;
+  color: #292929;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-top: 12px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+
+.link .quick-menu .item a .txt p span {
+  display: block;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 6px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
 /*# sourceMappingURL=style.css.map */
