@@ -385,7 +385,22 @@
         
         .item {
             padding: 0 45px;
-
+            &:nth-child(2) {
+                .icon {
+                    background: url("./../images/icon_quickmenu.png") -70px 0 no-repeat;            
+                }
+            }
+            &:nth-child(3) {
+                .icon {
+                    background: url("./../images/icon_quickmenu.png") -140px 0 no-repeat;            
+                }
+            }
+            &:nth-child(4) {
+                .icon {
+                    background: url("./../images/icon_quickmenu.png") -210px 0 no-repeat;            
+                }
+            }
+            
             a {
                 display: flex;
                 justify-content: center;
